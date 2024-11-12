@@ -1,0 +1,136 @@
+# Enchantment groups are used for enchanter, to sell specific type books. You can group them
+# and give each group global color.
+# YOU CAN DELETE THESE GROUPS AND CREATE YOUR OWN
+settings:
+  magic-dust:
+    # Limit applying of Magic dust per group
+    # If false, magic dust can be applied to different groups
+    limit-applying-per-group: true
+  randomization-scrolls:
+    # Limit applying of Randomization scrolls per group
+    # If false, Randomization scrolls can be applied to different groups
+    limit-applying-per-group: true
+  # If set group is invalid, what should be the fall-back group
+  fallback-group: THUONG
+groups:
+  THUONG:
+    global-color: "{#CCCCCC}"
+    group-name: "Thường"
+    # Use this to change the type of item per group
+    item:
+      type: FIREWORK_CHARGE
+      id: 0
+      custom-model-data: 0
+      # Use this to set firework charge's color only! Uses RGB
+      # Find colors here: https://htmlcolorcodes.com/color-picker/
+      rgb-color: 204;204;204
+    slot-increaser:
+      # How many slots should slot increaser add when using this type increaser
+      slots: 1
+      custom-model-data: 0
+    magic-dust:
+      # when right-clicked, it gives magic with success chance
+      # How much success should the dust have? (e.g.: 5 would mean always 5, 5-10 would mean random number from 5 to 10)
+      success: 1-15
+      # Chance to give Magic dust instead of Mystery dust
+      chance: 22
+  HIEM:
+    global-color: "{#47D647}"
+    group-name: "Hiếm"
+    item:
+      type: FIREWORK_CHARGE
+      id: 0
+      custom-model-data: 0
+      # Use this to set firework charge's color only! Uses RGB
+      # Find colors here: https://htmlcolorcodes.com/color-picker/
+      rgb-color: 71;214;71
+    slot-increaser:
+      # How many slots should slot increaser add when using this type increaser
+      slots: 1
+      custom-model-data: 0
+    magic-dust:
+      # when right-clicked, it gives magic with success chance
+      # How much success should the dust have? (e.g.: 5 would mean always 5, 5-10 would mean random number from 5 to 10)
+      success: 1-15
+      # Chance to give Magic dust instead of Mystery dust
+      chance: 22
+  SIEUHIEM:
+    global-color: "{#508BD9}"
+    group-name: "Siêu Hiếm"
+    item:
+      type: FIREWORK_CHARGE
+      id: 0
+      custom-model-data: 0
+      # Use this to set firework charge's color only! Uses RGB
+      # Find colors here: https://htmlcolorcodes.com/color-picker/
+      rgb-color: 80;139;217
+    slot-increaser:
+      # How many slots should slot increaser add when using this type increaser
+      slots: 1
+      custom-model-data: 0
+    magic-dust:
+      # when right-clicked, it gives magic with success chance
+      # How much success should the dust have? (e.g.: 5 would mean always 5, 5-10 would mean random number from 5 to 10)
+      success: 1-15
+      # Chance to give Magic dust instead of Mystery dust
+      chance: 22
+  SUTHI:
+    global-color: "{#EFE556}"
+    group-name: "Sử Thi"
+    item:
+      type: FIREWORK_CHARGE
+      id: 0
+      custom-model-data: 0
+      # Use this to set firework charge's color only! Uses RGB
+      # Find colors here: https://htmlcolorcodes.com/color-picker/
+      rgb-color: 239;229;86
+    slot-increaser:
+      # How many slots should slot increaser add when using this type increaser
+      slots: 1
+      custom-model-data: 0
+    magic-dust:
+      # when right-clicked, it gives magic with success chance
+      # How much success should the dust have? (e.g.: 5 would mean always 5, 5-10 would mean random number from 5 to 10)
+      success: 1-15
+      # Chance to give Magic dust instead of Mystery dust
+      chance: 22
+  HUYENTHOAI:
+    global-color: "{#F1AC21}"
+    group-name: "Huyền Thoại"
+    item:
+      type: FIREWORK_CHARGE
+      id: 0
+      custom-model-data: 0
+      # Use this to set firework charge's color only! Uses RGB
+      # Find colors here: https://htmlcolorcodes.com/color-picker/
+      rgb-color: 241;172;33
+    slot-increaser:
+      # How many slots should slot increaser add when using this type increaser
+      slots: 1
+      custom-model-data: 0
+    magic-dust:
+      # when right-clicked, it gives magic with success chance
+      # How much success should the dust have? (e.g.: 5 would mean always 5, 5-10 would mean random number from 5 to 10)
+      success: 1-15
+      # Chance to give Magic dust instead of Mystery dust
+      chance: 22
+  THANTHOAI:
+    global-color: "{#B30B0B}"
+    group-name: "Thần Thoại"
+    item:
+      type: FIREWORK_CHARGE
+      id: 0
+      custom-model-data: 0
+      # Use this to set firework charge's color only! Uses RGB
+      # Find colors here: https://htmlcolorcodes.com/color-picker/
+      rgb-color: 179;11;11
+    slot-increaser:
+      # How many slots should slot increaser add when using this type increaser
+      slots: 1
+      custom-model-data: 0
+    magic-dust:
+      # when right-clicked, it gives magic with success chance
+      # How much success should the dust have? (e.g.: 5 would mean always 5, 5-10 would mean random number from 5 to 10)
+      success: 1-15
+      # Chance to give Magic dust instead of Mystery dust
+      chance: 22

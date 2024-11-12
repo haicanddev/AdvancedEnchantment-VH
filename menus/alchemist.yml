@@ -1,0 +1,94 @@
+# General settings related to alchemist inventory system.
+general:
+  settings:
+    # The alchemist should accept books.
+    # If false, the alchemist will not accept books.
+    combine-books: true
+    # The alchemist should accept dust.
+    # If false, the alchemist will not accept dusts.
+    combine-dust: true
+    books:
+      # This method adds chances together and splits by 2 (x+y/2)
+      add-up-chances: true
+      pre-set-chances:
+        enabled: false
+        success: 50
+        destroy: 50
+    dusts:
+      # This method just adds up chances together
+      add-up: true
+    price:
+      economy: EXP # MONEY, EXP, LEVEL
+      # If true the plugin will calculate the price.
+      let-plugin-count: true
+      # Your custom price here.
+      # Only works if let-plugin-count is false.
+      custom-price: 250
+    other-items-slot:
+      first-item-slot: 11
+      second-item-slot: 15
+
+# Options for customization of alchemist inventory.
+inventory:
+  # Set to "none' to disable
+  # the sound when opening the inventory.
+  open-sound: "BLOCK_CHEST_OPEN"
+
+  # The title of the inventory.
+  name: "&#CB15D1&lDung Hợp"
+
+  # The size of the inventory.
+  # Must be a multiple of 9. (9, 18, 27, 36, 45, 54)
+  size: 54
+
+  items:
+    preview-item:
+      type: STAINED_GLASS_PANE
+      damage: 0
+      custom-model-data: 0
+      slot: 31
+      name: "&8[&e&nÔ Nhận Đồ&8]"
+      lore:
+        - ""
+        - "&7Vật phẩm của bạn sau khi"
+        - "&7dung hợp sẽ được để ở đây."
+        - ""
+    explanation-item:
+      type: STAINED_GLASS_PANE
+      damage: 14
+      custom-model-data: 0
+      slot: 49
+      name: "&l &l &l &l &8⬐ [&#F94C29&nCách Hoạt Động&8] ⬎"
+      lore:
+        - ""
+        - "&7Thả &#B94FD42 sách phù phép &8(cùng loại và cùng cấp)"
+        - "&7sẽ cho ra &#B94FD41 cuốn sách phù phép &7có &ecấp độ cao"
+        - "&7hơn 1 bậc."
+        - ""
+        - "&7Áp dụng tương tự với &fBụi May Mắn"
+        - "&7(số % phải bằng nhau)"
+        - ""
+        - "&L &l &l &l &8⬑ [——————————————] ⬏"
+    confirm-item:
+      type: STAINED_GLASS_PANE
+      damage: 5
+      custom-model-data: 0
+      slot: 13
+      name: "&8[&#CB15D1&nDung Hợp&8]"
+      lore:
+        - ""
+        - "&#EB381CGiá: &##FF2C1C&n%price% EXP"
+        - ""
+        - "&7Bắt đầu quá trình dung hợp"
+        - "&7để biến đổi vật phẩm trở nên"
+        - "&7đặc biệt hơn!"
+        - ""
+        - "&8&o(( &a&oNhấn Để Bắt Đầu &8&o))"
+        - ""
+    filler-item:
+      # Enable or disable the filler item.
+      enabled: true
+      type: STAINED_GLASS_PANE
+      damage: 15
+      name: " "
+      lore: [ ]
